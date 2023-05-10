@@ -13,6 +13,12 @@ router.post('/book', (req, res) => {
     const book = new booking(req.body);
     book.save();
     res.status(201).send(book)
+});
+
+router.get('/getcar',(req,res)=>{
+    Car.find().then((result)=>{
+        res.send(result)
+    })
 })
 
 module.exports = router;
