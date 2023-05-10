@@ -1,0 +1,7 @@
+for adding cars make a post request to http://localhost:8000 with json body data like 
+
+this:- {
+    "wheel":4,
+    "type":"sedan",
+    "model":"String"
+}
